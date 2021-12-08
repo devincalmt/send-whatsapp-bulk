@@ -127,7 +127,7 @@ else:
                         try:
                             attachDocumentButton = WebDriverWait(driver, 120).until(
                             EC.presence_of_element_located((By.XPATH, "//input[@accept='*']")))
-                            attachDocumentButton.send_keys(os.getcwd() + "\\Document\\" + media)
+                            attachDocumentButton.send_keys(os.getcwd() + "\\Document\\" + document)
                             sleep(3)
                         except:
                             print("There was a problem while attach document button for "+str(excel_data['Contact'][count]))
